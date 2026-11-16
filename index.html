@@ -1,21 +1,20 @@
-.card {
-  border: 1px solid #aaa;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 8px 0;
-  background-color: #a2b825;
-  width: 250px;
-  position: relative;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィールカード</title>
+    <link rel="stylesheet" href="4-1.css">
+</head>
+<body>
+    <h2>プロフィールカードを作ろう</h2>
 
-.card button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: #e74c3c;
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    <label>名前：<input type="text" id="name"></label>
+    <label>年齢：<input type="number" id="age"></label>
+    <button onclick="addCard()">追加</button>
+
+    <div id="cardList"></div>
+
+    <script src="4-1.js"></script>
+</body>
+</html>
